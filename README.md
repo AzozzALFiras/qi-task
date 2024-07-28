@@ -30,28 +30,57 @@ This application provides a task management dashboard where authenticated users 
 
 ### Authentication
 
-- **Register**: `POST /api/v1/auth/register`
-- **Login**: `POST /api/v1/auth/login`
-- **Logout**: `POST /api/v1/auth/logout` (Requires Bearer token)
+#### Register
 
-### Projects
+- **Endpoint**: `POST /api/v1/auth/register`
+- **Request Body**:
+   ```json
+  {
+    "name": "string",
+    "email": "string",
+    "password": "string"
+  }
+  ```
 
-- **Get All Projects**: `GET /api/v1/projects/all` (Requires Bearer token)
-- **Create Project**: `POST /api/v1/projects/create` (Requires Bearer token)
-- **Show Project**: `GET /api/v1/projects/show/{id}` (Requires Bearer token)
-- **Update Project**: `PUT /api/v1/projects/update/{id}` (Requires Bearer token)
-- **Delete Project**: `DELETE /api/v1/projects/delete/{id}` (Requires Bearer token)
+#### Login
 
-### Project Tasks
+- **Endpoint**: `POST /api/v1/auth/login`
+- **Request Body**:
+   ```json
+ {
+  "email": "string",
+  "password": "string"
+}
+ ```
 
-- **Get All Tasks for Project**: `GET /api/v1/projects/details/{projectId}/tasks` (Requires Bearer token)
-- **Create Task**: `POST /api/v1/projects/details/{projectId}/tasks` (Requires Bearer token)
-- **Show Task**: `GET /api/v1/projects/details/{projectId}/tasks/{taskId}` (Requires Bearer token)
-- **Update Task**: `PUT /api/v1/projects/details/{projectId}/tasks/{taskId}` (Requires Bearer token)
-- **Delete Task**: `DELETE /api/v1/projects/details/{projectId}/tasks/{taskId}` (Requires Bearer token)
-- **Tasks Ending After a Date**: `GET /api/v1/projects/details/{projectId}/tasks/ending-after/{date}` (Requires Bearer token)
+**Response Body**:
+   ```json
+  {
+  "token": "string",
+  "status"=> true,
+  "message" => "Logged in successfully",
+  "user": {
+    "id": "integer",
+    "name": "string",
+    "email": "string"
+  }
+}
+ ```
 
-## License
+ #### Logout
 
-Laravel is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
- 
+- **Endpoint**: `POST /api/v1/auth/logout`
+- **Headers**:
+   ```json
+ {
+  "Authorization": "Bearer {token}"
+}
+ ```
+
+ - **Response**:
+   ```json
+   {
+  "message": "Successfully logged out."
+}
+
+ ```
