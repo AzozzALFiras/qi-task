@@ -7,7 +7,7 @@ use App\Http\Requests\UpdateprojectsRequest;
 use App\Models\projects;
 
 class ProjectsController extends Controller
-{
+{ 
     /**
      * Display a listing of the resource.
      */
