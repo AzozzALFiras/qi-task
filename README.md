@@ -86,8 +86,8 @@ This application provides a task management dashboard where authenticated users 
    ```json
   {
   "token": "string",
-  "status"=> true,
-  "message" => "Logged in successfully",
+  "status": true,
+  "message": "Logged in successfully",
   "user": {
     "id": "integer",
     "name": "string",
