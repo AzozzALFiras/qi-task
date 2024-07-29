@@ -6,6 +6,33 @@
 
 This application provides a task management dashboard where authenticated users can manage projects and tasks. It uses Laravel for the backend, Livewire for real-time updates, and TailwindCSS for a modern, responsive UI.
 
+## Table of Contents
+
+1. **[Project Overview](#project-overview)**
+   - [Task Management Dashboard](#task-management-dashboard)
+   - [Requirements](#requirements)
+
+2. **[API Endpoints](#api-endpoints)**
+   - [Authentication](#authentication)
+     - [Register](#register)
+     - [Login](#login)
+     - [Logout](#logout)
+   - [Projects](#projects)
+     - [Get All Projects](#get-all-projects)
+     - [Create Project](#create-project)
+     - [Show Project](#show-project)
+     - [Update Project](#update-project)
+     - [Delete Project](#delete-project)
+   - [Project Tasks](#project-tasks)
+     - [Get All Tasks for Project](#get-all-tasks-for-project)
+     - [Create Task](#create-task)
+     - [Show Task](#show-task)
+     - [Update Task](#update-task)
+     - [Delete Task](#delete-task)
+     - [Tasks Ending After a Date](#tasks-ending-after-a-date)
+
+3. **[Screenshots](#screenshots)**
+
 ### Requirements
 
 1. **User Authentication**:
@@ -59,8 +86,8 @@ This application provides a task management dashboard where authenticated users 
    ```json
   {
   "token": "string",
-  "status": true,
-  "message": "Logged in successfully",
+  "status"=> true,
+  "message" => "Logged in successfully",
   "user": {
     "id": "integer",
     "name": "string",
@@ -409,30 +436,3 @@ This application provides a task management dashboard where authenticated users 
 }
 ```
 
-
-
-## Screenshots
-
-![Welcome Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/1.png)
-
-![Dashboard Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/2.png)
-
-![Projects Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/3.png)
-
-![Create New Projects Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/4.png)
-
-![Update Projects Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/5.png)
-
-![Add New Task For Projects Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/6.png)
-
-![Alerts Success etc Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/7.png)
-
-![Edit Tasks Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/8.png)
-
-![Update Tasks Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/9.png)
-
-![Show Tasks Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/10.png)
-
-![Profile edit Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/11.png)
-
-![Password & Delete Account Page](https://raw.githubusercontent.com/AzozzALFiras/qi-task/main/Screenshots/12.png)
