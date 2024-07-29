@@ -11,6 +11,8 @@ This application provides a task management dashboard where authenticated users 
 1. **[Project Overview](#project-overview)**
    - [Task Management Dashboard](#task-management-dashboard)
    - [Requirements](#requirements)
+   - [Installation](#Installation)
+
 
 2. **[API Endpoints](#api-endpoints)**
    - [Authentication](#authentication)
@@ -32,6 +34,68 @@ This application provides a task management dashboard where authenticated users 
      - [Tasks Ending After a Date](#tasks-ending-after-a-date)
 
 3. **[Screenshots](#screenshots)**
+
+
+   ## Installation
+
+Before you begin, ensure you have met the following requirements:
+
+- **PHP**: ^8.1
+- **GuzzleHTTP**: ^7.2
+- **Laravel Framework**: ^10.10
+- **Laravel Sanctum**: ^3.3
+- **Laravel Tinker**: ^2.8
+- **Livewire**: ^3.5
+- **Composer**: For managing PHP dependencies
+
+
+## Installation
+
+To install and set up the project, follow these steps:
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/AzozzALFiras/qi-task.git
+   cd qi-task
+   ```
+
+   2. **Install Dependencies**
+   #### Use Composer to install the PHP dependencies specified in composer.json.
+
+   ```bash
+   composer install
+   ```
+
+
+3. **Set Up Environment**
+   #### Copy the .env.example file to .env and configure your environment variables as needed.
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   4. **Generate Application Key**
+   #### Run the following command to generate a new application key.
+
+   ```bash
+   php artisan key:generate
+   ```
+
+      5. **Run Migrations**
+   #### Migrate the database to create the necessary tables.
+
+   ```bash
+   php artisan migrate
+   ```
+   
+      6. **Start the Development Servers**
+   #### Use Laravel’s built-in server to start the application.
+   ```bash
+   php artisan serve
+   ```
+
+    
 
 ### Requirements
 
