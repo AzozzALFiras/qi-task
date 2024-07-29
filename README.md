@@ -31,8 +31,6 @@ Before you begin, ensure you have met the following requirements:
 - **Composer**: For managing PHP dependencies
 
 
-## Installation
-
 To install and set up the project, follow these steps:
 
 1. **Clone the Repository**
